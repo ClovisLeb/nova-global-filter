@@ -27035,16 +27035,6 @@ var render = function() {
                         class: { flex: _vm.card.inline }
                       },
                       [
-                        _c(
-                          "label",
-                          {
-                            staticClass:
-                              "block mb-3 mr-3 text-80 pt-2 leading-tight",
-                            attrs: { for: filter.name }
-                          },
-                          [_vm._v(_vm._s(filter.name))]
-                        ),
-                        _vm._v(" "),
                         filter.component === "date-filter"
                           ? _c("date-time-picker", {
                               staticClass:
@@ -27054,8 +27044,8 @@ var render = function() {
                                 dusk: "date-filter",
                                 name: "date-filter",
                                 autocomplete: "off",
-                                value: filter.dateFormat,
-                                dateFormat: "Y-m-d",
+                                value: filter.value,
+                                dateFormat: filter.dateFormat,
                                 placeholder: _vm.__("Choose date"),
                                 "enable-time": filter.enableTime,
                                 "enable-seconds": filter.enableSecond

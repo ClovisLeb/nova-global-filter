@@ -14,10 +14,10 @@
           :key="index"
         >
           <div class="px-8 py-6" :class="{ 'flex': card.inline }">
-            <label
+            <!-- <label
               :for="filter.name"
               class="block mb-3 mr-3 text-80 pt-2 leading-tight"
-            >{{ filter.name }}</label>
+            >{{ filter.name }}</label> -->
             <date-time-picker
               :id="filter.name"
               v-if="filter.component === 'date-filter'"
@@ -25,8 +25,8 @@
               dusk="date-filter"
               name="date-filter"
               autocomplete="off"
-              :value="filter.dateFormat"
-              dateFormat="Y-m-d"
+              :value="filter.value"
+              :dateFormat="filter.dateFormat"
               :placeholder="__('Choose date')"
               :enable-time="filter.enableTime"
               :enable-seconds="filter.enableSecond"
