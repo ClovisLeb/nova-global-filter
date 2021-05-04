@@ -1,5 +1,6 @@
 <script>
-import TrendMetric from "../../../../../vendor/laravel/nova/resources/js/components/Metrics/TrendMetric";
+// import TrendMetric from "../../../../../vendor/laravel/nova/resources/js/components/Metrics/TrendMetric";
+import TrendMetric from "../../../vendor/laravel/nova/resources/js/components/Metrics/TrendMetric";
 import FilterBehavior from "./FilterBehavior";
 import { Minimum } from "laravel-nova";
 
